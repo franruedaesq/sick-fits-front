@@ -4,4 +4,4 @@
 
 ## Liver version
 
-[Sick Fits](https://sick-fits-front.vercel.app/sell)
+[Sick Fits](https://sick-fits-front.vercel.app/)
