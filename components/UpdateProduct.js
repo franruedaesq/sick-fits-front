@@ -51,7 +51,6 @@ function UpdateProduct({ id }) {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    console.log(id)
     const resp = await updateProduct({
         variables: {
             id,
@@ -60,8 +59,6 @@ function UpdateProduct({ id }) {
             price: inputs.price,
         }
     }).catch(console.error) ;
-    console.log(resp);
-    // TODO: HANDLE SUBMIT
   }
 
   return (
