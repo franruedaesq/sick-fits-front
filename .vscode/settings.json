@@ -16,15 +16,5 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "prettier.disableLanguages": [
-    "javascript",
-    "javascriptreact"
-  ],
-  "emmet.excludeLanguages": [
-
-    "markdown"
-  ],
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
- }
+  "prettier.disableLanguages": ["javascript", "javascriptreact"]
 }
