@@ -1,5 +1,5 @@
 import CreateProduct from "components/CreateProduct";
-import { Head } from "next/document";
+import Head from "next/head";
 
 export default function Sell() {
   return (
