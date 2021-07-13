@@ -15,7 +15,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en-CA">
         <Head>
-          <title>Sick Fits</title>
           <link rel="shortcut icon" href="/static/favicon.ico" />
         </Head>
         <body>
