@@ -1,5 +1,6 @@
-import FormatMoney from "lib/formatMoney";
+import formatMoney from "lib/formatMoney";
 import Link from "next/link";
+import AddToCart from "./AddToCart";
 import DeleteProduct from "./DeleteProduct";
 import ItemStyles from "./styles/ItemStyles";
 import PriceTag from "./styles/PriceTag";
@@ -17,7 +18,7 @@ export default function Product({ product }) {
           {product.name}
           </Link>
       </Title>
-      <PriceTag>{FormatMoney(product.price)}</PriceTag>
+      <PriceTag>{formatMoney(product.price)}</PriceTag>
       <p>{product.description}</p>
       <div className="buttonList">
         <Link href={{
@@ -28,6 +29,7 @@ export default function Product({ product }) {
         }} >
           Edit ✏️
         </Link>
+        <AddToCart id={product.id}/>
         <DeleteProduct id={product.id}>
           Delete
         </DeleteProduct>

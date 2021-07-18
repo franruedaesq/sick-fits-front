@@ -15,10 +15,17 @@ const DropDownItem = styled.div`
   ${(props) => (props.highlighted ? 'padding-left: 2rem;' : null)};
   display: flex;
   align-items: center;
+  cursor: pointer;
   border-left: 10px solid
     ${(props) => (props.highlighted ? props.theme.lightgrey : 'white')};
   img {
     margin-right: 10px;
+  }
+
+  &:hover {
+    background: #f7f7f7;
+    border-left: 10px solid var(--lightGrey);
+    padding-left: 2rem;
   }
 `;
 
